@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: baran-guestbook-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: baran-guestbook-frontend
+  template:
+    metadata:
+      labels:
+        app: baran-guestbook-frontend
+    spec:
+      containers:
+        - name: frontend
+          image: ghcr.io/sadecebar/baran-guestbook-frontend:latest
+          ports:
+            - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: baran-frontend
+spec:
+  selector:
+    app: baran-guestbook-frontend
+  ports:
+    - port: 8080
+      targetPort: 8080
+
