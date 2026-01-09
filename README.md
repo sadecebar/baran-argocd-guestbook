@@ -5,7 +5,8 @@
 **Typ av arbete:** Individuellt slutprojekt
 
 ## Åtkomst och examination
-**URL till applikation:** http://baran-guestbook-grupp5.apps.devops24.cloud2.se
+**URL till applikation:** http://baran-guestbook-grupp5.apps.devops24.cloud2.se / 
+
 **GitHub Repository:** https://github.com/sadecebar/baran-argocd-guestbook
 
 ## Inledning
