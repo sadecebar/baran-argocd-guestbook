@@ -15,8 +15,16 @@ spec:
       containers:
         - name: frontend
           image: ghcr.io/sadecebar/baran-guestbook-frontend:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 8080
+          resources:
+            requests:
+              cpu: 25m
+              memory: 64Mi
+            limits:
+              cpu: 200m
+              memory: 128Mi
 ---
 apiVersion: v1
 kind: Service
@@ -26,6 +34,6 @@ spec:
   selector:
     app: baran-guestbook-frontend
   ports:
-    - port: 8080
+    - name: http
+      port: 8080
       targetPort: 8080
-
