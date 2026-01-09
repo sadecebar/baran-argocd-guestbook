@@ -4,6 +4,10 @@
 **Kurs:** CI/CD  
 **Typ av arbete:** Individuellt slutprojekt
 
+## Åtkomst och examination
+**URL till applikation:** http://baran-guestbook-grupp5.apps.devops24.cloud2.se
+**GitHub Repository:** https://github.com/sadecebar/baran-argocd-guestbook
+
 ## Inledning
 Detta projekt utgör slutuppgiften i CI/CD-kursen och bygger vidare på det tidigare grupparbetet Automate Guestbook. Syftet med uppgiften var att vidareutveckla applikationen genom att införa ArgoCD och arbeta enligt GitOps-principer, där Git används som enda källa till sanning för både applikationskod och driftsättning.
 
